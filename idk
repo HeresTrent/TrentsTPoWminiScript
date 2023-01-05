@@ -1,0 +1,92 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trents TPoW Mini Script", "BloodTheme")
+
+--MAIN
+
+
+local Main = Window:NewTab("Characters")
+local MainSection = Main:NewSection("Select Character")
+
+MainSection:NewButton("Dark Josie", "Select Character", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/TPoW/main/DarkJosie"))()
+end)
+
+
+
+MainSection:NewButton("Bonnie", "Select Character", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/BonnieBennett/main/Bonnie"))()
+end)
+
+
+
+MainSection:NewButton("Freya", "Select Character", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/Freya/main/TPoW"))()
+end)
+
+
+
+MainSection:NewButton("Qetsiyah", "Select Character", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/Qetsiyah/main/TPoW"))()
+end)
+
+
+
+local Main = Window:NewTab("Spells")
+local MainSection = Main:NewSection("Dark Josie")
+
+
+
+MainSection:NewButton("Japanese Purge Spell", "Harae Tamae Kioku Yomigaerashi Tamae", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/PurgeSpell/main/TPoW"))()
+end)
+
+
+
+local MainSection = Main:NewSection("Bonnie")
+
+
+
+MainSection:NewButton("Expression Scream", "Scream", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/BonnieScream/main/TPoW"))()
+end)
+
+
+
+MainSection:NewButton("Augmentation", "Magic refill", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/TPoWaugmentation/main/Augmentation"))()
+end)
+
+
+
+MainSection:NewButton("Mass Pain", "Magic refill", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeresTrent/BonniePain/main/MassPain"))()
+end)
+
+
+
+local MainSection = Main:NewSection("eMiLy, I kNoW yOuR'E tHeRe! 😭😭😭")
+
+MainSection:NewButton("Name remover", "removes name", function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HeresTrent/Name-remover/main/remove%20name'),true))()
+end)
+
+
+
+local Tab = Window:NewTab("Gui toggle")
+local Section = Tab:NewSection("Gui toggle")
+Section:NewKeybind("Toggle", "Toggle", Enum.KeyCode.LeftControl, function()
+    Library:ToggleUI()
+end)
+
+
+
+
+wait(1)
+game.StarterGui:SetCore("SendNotification", { 
+    Title = "Trents TPoW Mini Script❤";
+    Text = "The Prophecy Of Witches    Now Active ";
+    Icon = "rbxthumb://type=Asset&id=12040122061&w=150&h=150";
+    Duration = "2";
+    Button1 = "Close";
+})
+--Credits to Trent and flopera!
